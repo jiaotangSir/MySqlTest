@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/background_login">
+    <!-- padding 内边距   layout_margin 外边距
+        android:layout_alignParentTop 布局的位置是否处于顶部 -->
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="@drawable/login_xun1"
+        android:id="@+id/imageView2"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"/>
+
+    <RelativeLayout
+        android:id="@+id/login_div"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:padding="15dip"
+        android:layout_margin="30dip"
+        android:background="@drawable/background_login_div" >
+        <!-- 账号 -->
+        <TextView
+            android:id="@+id/textView17"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="5dp"
+            android:text="账号" />
+        <EditText
+            android:id="@+id/editText_name"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:hint="请写入账号..."
+            android:layout_below="@id/textView17"
+            android:inputType="text"/>
+        <!-- 密码 text -->
+        <TextView
+            android:id="@+id/textView21"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/editText_name"
+            android:layout_marginTop="3dp"
+            android:text="密码" />
+        <EditText
+            android:id="@+id/editText_password"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textView21"
+            android:inputType="textPassword"
+            android:ems="10"
+            android:hint="请输入密码..." />
+        <!-- 登录button -->
+        <Button
+            android:id="@+id/button_login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/editText_password"
+            android:layout_alignRight="@id/editText_password"
+            android:text="登录"
+            android:background="@drawable/button_custom"
+            android:textColor="@android:color/background_light" />
+
+    </RelativeLayout>
+
+</LinearLayout>

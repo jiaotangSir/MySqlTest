@@ -65,7 +65,8 @@ public class BottomNavigation extends AppCompatActivity {
     @Override
     protected void onStart() {
         super.onStart();
-        mHomeRadioGroup.check(R.id.radio_home);
+
+
     }
 
     //用adapter来管理三个Fragment界面的变化。注意，我这里用的Fragment都是v4包里面的
